@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36 Edg/136.0.0.0" version="27.0.3">
+  <diagram name="Página-1" id="sX-tumZLmKdCJ4NHklid">
+    <mxGraphModel dx="1605" dy="1629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMt45b-FivpXsPeFEU0e-2" target="28OrhBJkhWEZbOj7LIcC-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="25" y="150" />
+              <mxPoint x="85" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.06;entryY=0.252;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vMt45b-FivpXsPeFEU0e-2" target="28OrhBJkhWEZbOj7LIcC-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMt45b-FivpXsPeFEU0e-2" target="28OrhBJkhWEZbOj7LIcC-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vMt45b-FivpXsPeFEU0e-2" value="cliente personal" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMt45b-FivpXsPeFEU0e-3" target="28OrhBJkhWEZbOj7LIcC-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="150" />
+              <mxPoint x="85" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="cliente empresarial" tooltip="- Pueden tener uno o más titulares" id="vMt45b-FivpXsPeFEU0e-3">
+          <mxCell style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+            <mxGeometry x="130" y="160" width="30" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vMt45b-FivpXsPeFEU0e-4" target="vMt45b-FivpXsPeFEU0e-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vMt45b-FivpXsPeFEU0e-4" value="admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vMt45b-FivpXsPeFEU0e-5" value="Aceptar crédito" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="350" width="140" height="70" as="geometry" />
+        </mxCell>
+        <UserObject label="Solicitar crédito" tooltip="- Personal: 1 máx.&#xa;- Empresarial: más de 1.&#xa;- No es necesario una cuenta bancaria." id="vMt45b-FivpXsPeFEU0e-6">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="274" y="-15" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="vMt45b-FivpXsPeFEU0e-9" value="sistema bancario" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-20" width="370" height="480" as="geometry" />
+        </mxCell>
+        <UserObject label="crear cuenta plazo fijo" tooltip="- Comisión por mantenimiento: S/. 0&#xa;- Movimiento de retiro o depósito: 1&#xa;- Restringido a un día específico del mes.&#xa;- Máximo de cuentas: 1" id="28OrhBJkhWEZbOj7LIcC-4">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="290" y="310" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="vMt45b-FivpXsPeFEU0e-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="28OrhBJkhWEZbOj7LIcC-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="28OrhBJkhWEZbOj7LIcC-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="28OrhBJkhWEZbOj7LIcC-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="28OrhBJkhWEZbOj7LIcC-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="28OrhBJkhWEZbOj7LIcC-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="28OrhBJkhWEZbOj7LIcC-6" target="28OrhBJkhWEZbOj7LIcC-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="28OrhBJkhWEZbOj7LIcC-6" value="usuario" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="55" width="30" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="crear cuenta corriente" tooltip="- Comisión de mantenimiento: S/. X&#xa;- Sin límite de movimientos mensuales.&#xa;- Máx. cuentas: 1 personal, sin limites para empresas." id="28OrhBJkhWEZbOj7LIcC-14">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="260" y="230" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="crear cuenta de ahorro" tooltip="- Comisión por mantenimiento: S/0.&#xa;- Movimientos máx. mensuales: n&#xa;- Máx. cuentas: 1" id="28OrhBJkhWEZbOj7LIcC-15">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="240" y="380" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Realizar transacción bancaria (deposito y retiro)" tooltip="- Personal: 1 máx.&#xa;- Empresarial: más de 1.&#xa;- No es necesario una cuenta bancaria." id="28OrhBJkhWEZbOj7LIcC-20">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="274" y="60" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Pagar productos de crédito" tooltip="- Personal: 1 máx.&#xa;- Empresarial: más de 1.&#xa;- No es necesario una cuenta bancaria." id="28OrhBJkhWEZbOj7LIcC-22">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="250" y="155" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Visualizar saldo de productos" tooltip="- Personal: 1 máx.&#xa;- Empresarial: más de 1.&#xa;- No es necesario una cuenta bancaria." id="28OrhBJkhWEZbOj7LIcC-24">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="430" y="10" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Ver movimientos de un producto" tooltip="- Personal: 1 máx.&#xa;- Empresarial: más de 1.&#xa;- No es necesario una cuenta bancaria." id="28OrhBJkhWEZbOj7LIcC-25">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="430" y="200" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Cargar consumos a la tarjeta de crédito" tooltip="- Personal: 1 máx.&#xa;- Empresarial: más de 1.&#xa;- No es necesario una cuenta bancaria." id="28OrhBJkhWEZbOj7LIcC-26">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+            <mxGeometry x="420" y="115" width="140" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
