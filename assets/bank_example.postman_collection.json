@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "a4b37272-eccc-4da3-bfd1-6605cf8c1120",
+		"name": "bank_example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44859627",
+		"_collection_link": "https://juanescurra-7586023.postman.co/workspace/f57f33be-0361-4c23-865a-4d2cc174fbbc/collection/44859627-a4b37272-eccc-4da3-bfd1-6605cf8c1120?action=share&source=collection_link&creator=44859627"
+	},
+	"item": [
+		{
+			"name": "product-service",
+			"item": [
+				{
+					"name": "Create saving account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"dddd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/saving-accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"saving-accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Current Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"123ABC\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/current-accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"current-accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Fixed Term Deposit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"123ABC\",\r\n    \"balance\": 12500.00,\r\n    \"maturityDate\": \"2025-08-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fixed-term-deposits",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fixed-term-deposits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

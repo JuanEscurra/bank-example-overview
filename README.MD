@@ -35,3 +35,9 @@ En base al analisis de los requisitos funcionales y no funcionales se ha realiza
 - [transaction-service](https://github.com/JuanEscurra/transaction-service)
 - [config-server](https://github.com/JuanEscurra/config-server)
   
+
+## Requisitos de los componentes:
+- Java 11
+- Maven
+- MongoDB
+- Postman (Hay una colección lista para importar y probar)
