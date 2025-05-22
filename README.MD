@@ -30,11 +30,12 @@ En base al analisis de los requisitos funcionales y no funcionales se ha realiza
 
 
 ## Repositorios adjuntos (componentes)
+- [Discovery-service (eureka)](https://github.com/JuanEscurra/discovery-service)
 - [user-service](https://github.com/JuanEscurra/user-service)
 - [product-service](https://github.com/JuanEscurra/product-service)
 - [transaction-service](https://github.com/JuanEscurra/transaction-service)
 - [config-server](https://github.com/JuanEscurra/config-server)
-  
+- [Repositorio de configuraciones](https://github.com/JuanEscurra/service-configuration)
 
 ## Requisitos de los componentes:
 - Java 11

@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "a4b37272-eccc-4da3-bfd1-6605cf8c1120",
+		"_postman_id": "7207d5ee-3d4d-4f95-9b0b-b788c6978920",
 		"name": "bank_example",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "44859627",
-		"_collection_link": "https://juanescurra-7586023.postman.co/workspace/f57f33be-0361-4c23-865a-4d2cc174fbbc/collection/44859627-a4b37272-eccc-4da3-bfd1-6605cf8c1120?action=share&source=collection_link&creator=44859627"
+		"_collection_link": "https://juanescurra-7586023.postman.co/workspace/Juan-Escurra's-Workspace~f57f33be-0361-4c23-865a-4d2cc174fbbc/collection/44859627-7207d5ee-3d4d-4f95-9b0b-b788c6978920?action=share&source=collection_link&creator=44859627"
 	},
 	"item": [
 		{
@@ -17,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"clientId\": \"dddd\"\r\n}",
+							"raw": "{\r\n    \"clientId\": \"682f7f117773d976e762c34f\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -89,6 +89,220 @@
 							"port": "8080",
 							"path": [
 								"fixed-term-deposits"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user-service",
+			"item": [
+				{
+					"name": "Get user by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Timezone",
+								"value": "America/Lima",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8081/clients/682f7f117773d976e762c34f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clients",
+								"682f7f117773d976e762c34f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create client personal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Timezone",
+								"value": "America/Lima",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Juan\",\n    \"email\": \"juan@example.com\",\n    \"phone\": \"987456321\",\n    \"identifier\": \"12345674\",\n    \"lastname\": \"Escurra\",\n    \"identifierType\": \"DNI\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clients/personal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clients",
+								"personal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create client company",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Timezone",
+								"value": "America/Lima",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Empresa S.A.C\",\n    \"phone\": \"987456321\",\n    \"email\": \"correo@empresa.com\",\n    \"identifier\": \"77445123\",\n    \"fiscalAddress\": \"123 Main St, Lima\",\n    \"commercialName\": \"Tech Solutions S.A.C.\",\n    \"representatives\": [\n        {\n        \"name\": \"Juan\",\n        \"email\": \"juan@example.com\",\n        \"phone\": \"987456321\",\n        \"identifier\": \"12345671\",\n        \"lastname\": \"Escurra\",\n        \"identifierType\": \"DNI\"\n        },\n        {\n        \"name\": \"Alexander\",\n        \"email\": \"alexander@example.com\",\n        \"phone\": \"987456322\",\n        \"identifier\": \"12345672\",\n        \"lastname\": \"Rodriguez\",\n        \"identifierType\": \"DNI\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clients/companies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clients",
+								"companies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create client company",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "X-Timezone",
+										"value": "America/Lima",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Empresa S.A.C\",\n    \"phone\": \"987456321\",\n    \"email\": \"correo@empresa.com\",\n    \"identifier\": \"77445123\",\n    \"fiscalAddress\": \"123 Main St, Lima\",\n    \"commercialName\": \"Tech Solutions S.A.C.\",\n    \"representatives\": [\n        {\n        \"name\": \"Juan\",\n        \"email\": \"juan@example.com\",\n        \"phone\": \"987456321\",\n        \"identifier\": \"12345671\",\n        \"lastname\": \"Escurra\",\n        \"identifierType\": \"DNI\"\n        },\n        {\n        \"name\": \"Alexander\",\n        \"email\": \"alexander@example.com\",\n        \"phone\": \"987456322\",\n        \"identifier\": \"12345672\",\n        \"lastname\": \"Rodriguez\",\n        \"identifierType\": \"DNI\"\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8081/clients/companies",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"clients",
+										"companies"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "524"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"createdAt\": \"2025-05-20T23:08:20.293394-05:00\",\n    \"createdBy\": null,\n    \"updatedAt\": null,\n    \"updatedBy\": null,\n    \"id\": \"682d51b43a4afc7a7406cd18\",\n    \"clientType\": \"COMPANY\",\n    \"clientCategory\": \"REGULAR\",\n    \"active\": true,\n    \"person\": null,\n    \"company\": {\n        \"createdAt\": \"2025-05-20T23:08:20.251915-05:00\",\n        \"createdBy\": null,\n        \"updatedAt\": null,\n        \"updatedBy\": null,\n        \"name\": \"Empresa S.A.C\",\n        \"email\": \"correo@empresa.com\",\n        \"phone\": \"987456321\",\n        \"identifier\": \"77445123\",\n        \"id\": \"682d51b43a4afc7a7406cd17\",\n        \"fiscalAddress\": \"123 Main St, Lima\",\n        \"commercialName\": \"Tech Solutions S.A.C.\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "config-server",
+			"item": [
+				{
+					"name": "Get config product-service",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Timezone",
+								"value": "America/Lima",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8888/product-service/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8888",
+							"path": [
+								"product-service",
+								"default"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transaction-service",
+			"item": [
+				{
+					"name": "get transaction by product id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Timezone",
+								"value": "America/Lima",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8082/transactions/product/682ab6fb076a683019a36b12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"transactions",
+								"product",
+								"682ab6fb076a683019a36b12"
 							]
 						}
 					},
